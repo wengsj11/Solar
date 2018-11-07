@@ -1,2 +1,2 @@
 # Solar3D
-Solar System Simulation  Using CSS3 Animation.
+Solar System simulation using CSS3 animation.
