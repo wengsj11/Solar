@@ -23,9 +23,9 @@
         height: 30px;
         margin-left: -50px;
         margin-top: -15px;
-        animation:  animX 5s cubic-bezier(0.35,0,0.65,1) -2.5s infinite alternate,
-                    animY 5s cubic-bezier(0.35,0,0.65,1) 0s infinite alternate,
-                    animPos 5s cubic-bezier(0,0.35,1,0.35) infinite alternate;
+        animation:  animX 10s cubic-bezier(0.35,0,0.65,1) -5s infinite alternate,
+                    animY 10s cubic-bezier(0.35,0,0.65,1) 0s infinite alternate,
+                    animPos 10s cubic-bezier(0,0.35,1,0.35) infinite alternate;
         position: relative;
         border: 1px solid #ffffff42;
         border-radius: 50%;
@@ -38,17 +38,26 @@
         margin-top: -15px;
         background-color: rgb(43, 168, 226);
         border-radius: 50%;
+        -webkit-box-shadow: 0 0 10px rgb(43, 168, 226);
+        box-shadow: 0 0 10px rgb(43, 168, 226);
         position: absolute;
         left: 0;
         right: 0;
         z-index: 8;
+    }
+    .dot:hover{
+        animation: planet-hover 0.7s forwards ;
+    }
+    @keyframes planet-hover {
+        from { transform: scale(1); }
+        to { transform: scale(1.1); }
     }
     .moon{
         width: 10px;
         height: 10px;
         margin-left: -5px;
         margin-top: -5px;
-        background-color: yellow;
+        background-color: #cfcfd4;
         position: relative;
         border-radius: 50%;
         animation:  animX-moon 1s cubic-bezier(0.35,0,0.65,1) -0.5s infinite alternate,
@@ -113,20 +122,27 @@
         margin: 0 auto;
         margin-top: -75px;
         border-radius: 50%;
-        background-color: rgb(241, 182, 18);
+        -webkit-box-shadow: 0 0 30px white;
+        box-shadow: 0 0 30px white;
+        background-color: rgb(237, 241, 18);
         position: absolute;
         left: 0;
         right: 0;
         z-index: 8;
     }
+    .sun:hover{
+        animation: planet-hover 0.5s forwards;
+    }
     .loop{
         width: 1200px;
         height: 300px;
-        border-left: 25px solid rgb(117, 116, 116);
-        border-right: 25px solid rgb(138, 137, 137);
+        border-left: 2px solid white;
+        border-right: 2px solid white;
+        -webkit-box-shadow: 0 0 50px white inset;
+        box-shadow: 0 0 50px white inset;
         margin:0 auto;
         margin-top: 300px;
-        transform: rotate(-10deg);
+        transform: rotate(-10deg) /* 解决旋转后，出现虚线边框锯齿的问题*/translateZ(0);;
         border-radius: 50%;
     }
 </style>
