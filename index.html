@@ -10,12 +10,57 @@
       /*
        行星速度大致比例：0.25 : 0.6 : 1 : 1.87 : 11 : 29 : 84 : 164
       */
-        body{
+        html,body{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .solar{
+            width: 100%;
+            height: 100%;
             /* background: -moz-radial-gradient(bottom left,circle, rgb(1, 2, 32), rgb(18, 15, 68), rgb(14, 14, 41));
             background: -webkit-radial-gradient(bottom left, circle, rgb(1, 2, 41), rgb(21, 16, 92), rgb(14, 14, 41)); */
-            background-color: rgb(46, 42, 61);
+            background-color: rgb(29, 27, 37);
         }
-        
+        .solar:before{
+            content: "";
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: black;
+            position: absolute;
+            box-shadow: 80vw 15vh snow, 
+            20vw 30vh snow, 
+            40vw 89vh 3px snow, 
+            10vw 1vh #fff, 
+            14vw 29vh 2px #FFF,
+             23vw 34vh 1px #FFF, 
+             1vw 99vh 1px #FFF, 
+             20vw 80vh #FFF, 
+             90vw 10vh 2px #fff, 
+             55vw 9vh #FFF, 
+             24vw 4vh 1px #FFF, 
+             50vw 99vh 1px #FFF, 
+             74vw 40vh 1px #FFF, 
+             80vw 9vh 1px #FFF,
+             20vw 80vh #FFF, 
+             85vw 78vh #fff,
+             30vw 80vh #FFF, 
+             80vw 10vh 2px #fff, 
+             65vw 9vh #FFF, 
+             84vw 4vh 1px #FFF, 
+             40vw 99vh 1px #FFF, 
+             64vw 40vh 1px #FFF, 
+             10vw 9vh 1px #FFF,
+             40vw 80vh #FFF, 
+             75vw 78vh #fff;
+             animation: stars 10s linear infinite alternate;
+        }
+        @keyframes stars {
+            0%{transform: translateY(0);}
+            0%{transform: translateY(50px) translateX(50px); }
+        }
         .loop{
             margin:0 auto;
             margin-top: 5px;
@@ -466,46 +511,47 @@
 </head>
 
 <body>
-    <div class="loop loop1">
-        <div class="loop loop2">
-            <div class="loop loop3">
-                <div class="loop loop4">
-                    <div class="loop loop5">
-                        <div class="loop loop6"> 
-                            <div class="loop loop7">
-                                <div class="line-up"></div>
-                                <div class="line-down"></div>
-                                <div class="loop loop8">
+    <div class="solar">
+        <div class="loop loop1">
+            <div class="loop loop2">
+                <div class="loop loop3">
+                    <div class="loop loop4">
+                        <div class="loop loop5">
+                            <div class="loop loop6"> 
+                                <div class="loop loop7">
                                     <div class="line-up"></div>
                                     <div class="line-down"></div>
-                                    <div class="loop loop9">
+                                    <div class="loop loop8">
                                         <div class="line-up"></div>
                                         <div class="line-down"></div>
-                                        <div class="venus">金星</div>
-                                        <div class="loop loop10">
+                                        <div class="loop loop9">
                                             <div class="line-up"></div>
-                                            <div class="sun"></div>
                                             <div class="line-down"></div>
-                                            <div class="mercury">水星</div>
+                                            <div class="venus">金星</div>
+                                            <div class="loop loop10">
+                                                <div class="line-up"></div>
+                                                <div class="sun"></div>
+                                                <div class="line-down"></div>
+                                                <div class="mercury">水星</div>
+                                            </div>
+                                        </div>
+                                        <div class="earth">
+                                            <div class="dot">地球</div>
+                                            <div class="moon"></div>
                                         </div>
                                     </div>
-                                    <div class="earth">
-                                        <div class="dot">地球</div>
-                                        <div class="moon"></div>
-                                    </div>
+                                    <div class="mars">火星</div>
                                 </div>
-                                <div class="mars">火星</div>
                             </div>
+                            <div class="jupiter">木星</div>
                         </div>
-                        <div class="jupiter">木星</div>
+                        <div class="saturn">土星</div>
                     </div>
-                    <div class="saturn">土星</div>
+                    <div class="uranus">天王星</div>
                 </div>
-                <div class="uranus">天王星</div>
+                <div class="neptune">海王星</div>
             </div>
-            <div class="neptune">海王星</div>
         </div>
-        
     </div>
     <!-- <div class="stone">
         <div class="rocks">
