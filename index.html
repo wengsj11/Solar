@@ -7,6 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>太阳系</title>
   <style>
+      /*
+       行星速度大致比例：0.25 : 0.6 : 1 : 1.87 : 11 : 29 : 84 : 164
+      */
         body{
             /* background: -moz-radial-gradient(bottom left,circle, rgb(1, 2, 32), rgb(18, 15, 68), rgb(14, 14, 41));
             background: -webkit-radial-gradient(bottom left, circle, rgb(1, 2, 41), rgb(21, 16, 92), rgb(14, 14, 41)); */
@@ -125,8 +128,8 @@
             height: 26px;
             margin-top: -13px;
             margin-left: -13px;
-            animation:  animX-Mer 10s cubic-bezier(0.35,0,0.65,1) -5s infinite alternate,
-                        animY-Mer 10s cubic-bezier(0.35,0,0.65,1) 0s infinite alternate,
+            animation:  animX-Mer 2s cubic-bezier(0.35,0,0.65,1) -1s infinite alternate,
+                        animY-Mer 2s cubic-bezier(0.35,0,0.65,1) 0s infinite alternate,
                         animPos 10s cubic-bezier(0,0.35,1,0.35) infinite alternate;
             background-color: rgb(226, 183, 43);
             position: absolute;
@@ -136,8 +139,8 @@
             height: 30px;
             margin-top: -15px;
             margin-left: -15px;
-            animation:  animX-Ven 10s cubic-bezier(0.35,0,0.65,1) -5s infinite alternate,
-                        animY-Ven 10s cubic-bezier(0.35,0,0.65,1) 0s infinite alternate,
+            animation:  animX-Ven 6s cubic-bezier(0.35,0,0.65,1) -3s infinite alternate,
+                        animY-Ven 6s cubic-bezier(0.35,0,0.65,1) 0s infinite alternate,
                         animPos 10s cubic-bezier(0,0.35,1,0.35) infinite alternate;
             background-color: rgb(226, 116, 43);
         }
@@ -146,8 +149,8 @@
             height: 30px;
             margin-top: -15px;
             margin-left: -15px;
-            animation:  animX-Mars 10s cubic-bezier(0.35,0,0.65,1) -5s infinite alternate,
-                        animY-Mars 10s cubic-bezier(0.35,0,0.65,1) 0s infinite alternate,
+            animation:  animX-Mars 18s cubic-bezier(0.35,0,0.65,1) -9s infinite alternate,
+                        animY-Mars 18s cubic-bezier(0.35,0,0.65,1) 0s infinite alternate,
                         animPos 10s cubic-bezier(0,0.35,1,0.35) infinite alternate;
             background-color: rgb(226, 49, 43);
         }
@@ -177,8 +180,8 @@
             height: 95px;
             margin-top: -47px;
             margin-left: -47px;
-            animation:  animX-Jup 10s cubic-bezier(0.35,0,0.65,1) -5s infinite alternate,
-                        animY-Jup 10s cubic-bezier(0.35,0,0.65,1) 0s infinite alternate,
+            animation:  animX-Jup 110s cubic-bezier(0.35,0,0.65,1) -55s infinite alternate,
+                        animY-Jup 110s cubic-bezier(0.35,0,0.65,1) 0s infinite alternate,
                         animPos 10s cubic-bezier(0,0.35,1,0.35) infinite alternate;
             background-color: rgb(180, 113, 59);
         }
@@ -187,8 +190,8 @@
             height: 85px;
             margin-top: -42px;
             margin-left: -42px;
-            animation:  animX-Sat 10s cubic-bezier(0.35,0,0.65,1) -5s infinite alternate,
-                        animY-Sat 10s cubic-bezier(0.35,0,0.65,1) 0s infinite alternate,
+            animation:  animX-Sat 290s cubic-bezier(0.35,0,0.65,1) -145s infinite alternate,
+                        animY-Sat 290s cubic-bezier(0.35,0,0.65,1) 0s infinite alternate,
                         animPos 10s cubic-bezier(0,0.35,1,0.35) infinite alternate;
             background-color: rgb(88, 55, 28);
         }
@@ -197,8 +200,8 @@
             height: 75px;
             margin-top: -37px;
             margin-left: -37px;
-            animation:  animX-Ura 10s cubic-bezier(0.35,0,0.65,1) -5s infinite alternate,
-                        animY-Ura 10s cubic-bezier(0.35,0,0.65,1) 0s infinite alternate,
+            animation:  animX-Ura 840s cubic-bezier(0.35,0,0.65,1) -420s infinite alternate,
+                        animY-Ura 840s cubic-bezier(0.35,0,0.65,1) 0s infinite alternate,
                         animPos 10s cubic-bezier(0,0.35,1,0.35) infinite alternate;
             background-color: rgb(58, 214, 188);
         }
@@ -207,8 +210,8 @@
             height: 65px;
             margin-top: -32px;
             margin-left: -32px;
-            animation:  animX-Nep 10s cubic-bezier(0.35,0,0.65,1) -5s infinite alternate,
-                        animY-Nep 10s cubic-bezier(0.35,0,0.65,1) 0s infinite alternate,
+            animation:  animX-Nep 1640s cubic-bezier(0.35,0,0.65,1) -820s infinite alternate,
+                        animY-Nep 1640s cubic-bezier(0.35,0,0.65,1) 0s infinite alternate,
                         animPos 10s cubic-bezier(0,0.35,1,0.35) infinite alternate;
             background-color: rgb(64, 43, 112);
         }
